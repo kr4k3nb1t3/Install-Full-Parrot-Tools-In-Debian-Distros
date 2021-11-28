@@ -8,4 +8,4 @@ deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
 deb https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
 #deb-src https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
 
-# 
+# El archivo install.sh, es una ejecucion simple de apt para gestionar paquetes, puede clonar o simplemente copiar el contenido y pegarlo en su terminal.
