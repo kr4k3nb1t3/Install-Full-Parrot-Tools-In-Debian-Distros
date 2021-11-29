@@ -27,5 +27,6 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 363A96A5CEA9EA27
 
 # Testeado en Kali Linux
 
+# Resultado final. Video...
 
-[![Video. Resultado Final](https://iimg.youtube.com/vi/OEAA44rv5L4/maxresdefault.jpg)](https://www.youtube.com/watch?v=OEAA44rv5L4)
+https://www.youtube.com/watch?v=OEAA44rv5L4
