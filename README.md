@@ -26,3 +26,6 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 363A96A5CEA9EA27
 # Haga un apt-get update o vuelva a ejecutar ./install.sh , esto bastara para montar Parrot OS sobre su distro basada en debian preferida.
 
 # Testeado en Kali Linux
+
+
+[![Watch the video](https://img.youtube.com/vi/OEAA44rv5L4/maxresdefault.jpg)](https://youtu.be/OEAA44rv5L4)
