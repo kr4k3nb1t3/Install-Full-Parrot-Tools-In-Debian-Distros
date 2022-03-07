@@ -31,6 +31,12 @@ cp -r zshrc ~/.zshrc
 
 sudo cp -r zshrc ~/.zshrc
 
+# Anonsurf no esta pensado para otros sistemas fuera de parrot, sin embargo antes de ejecutarlo puede hacer una copia de su resolv.conf, para evitar problemas de conexion al parar anonsurf, tiende a borrar sus nameservers solamente. Si usa kali, puede eliminar el anonsurf que ha instalado por defecto y trabajar con los siguientes repositorios segun sus preferencias...
+
+https://github.com/BrainfuckSec/kalitorify
+
+https://github.com/Und3rf10w/kali-anonsurf
+
 # Testeado en Kali Linux
 
 # Resultado final. Video...
