@@ -19,13 +19,17 @@ chmod +x install.sh
 
 cd .. && rm -r Install-Full-Parrot-Tools-In-Debian-Distros
 
-# Si presenta el error apt-secure(8) de importacion GPG (W: GPG error: https://deb.parrot.sh/parrot rolling-security InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 363A96A5CEA9EA27), agregue la salida de NO_PUBKEY al final de el siguiente comando para resolverlo.
+# Error apt-secure(8) de importacion GPG solucionado. Ahora la llave se almacena en la carpeta "/etc/apt/trusted.gpg.d" como "parrot-archive-keyring.gpg"
 
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 363A96A5CEA9EA27
+# Instalacion sobre la nueva version (5.0) de Parrot OS 
 
-# Haga un apt-get update o vuelva a ejecutar ./install.sh , esto bastara para montar Parrot OS sobre su distro basada en debian preferida.
+# Adicionalmente cuenta con el archivo zshrc de Parrot OS para tener la terminal con sus configuraciones predeterminadas del sistema, esto lo pude personalizar a su manera integrandolo con P10K y modificando el archivo. En mi caso el codigo "preexec () { print -Pn "\e]0;$1 - Terminal\a" }" de la linea #62 es de gran ayuda, ya que renombra el titulo de la terminal segun el comando que meta, para mantener un orden de trabajo.
 
-# Parrot esta presentando problemas con unos repositorios: (desktop-base, realtek). Use apt remove <repositorio> para solucionarlo mientras aplican el parche.
+# Para instalar, situese en el directorio clonado, reemplace su ~/.zshrc por este archivo, como usuario root y no root.
+
+cp -r zshrc ~/.zshrc
+
+sudo cp -r zshrc ~/.zshrc
 
 # Testeado en Kali Linux
 
