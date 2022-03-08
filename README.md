@@ -5,10 +5,15 @@
 # Comience editando el archivo /etc/apt/sources.list y agregue las siguientes lineas al final del archivo...
 
 deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
+
 deb https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
+
 deb https://deb.parrot.sh/parrot lts main contrib non-free
+
 deb https://deb.parrot.sh/parrot lts-updates main contrib non-free
+
 deb https://deb.parrot.sh/parrot lts-backports main contrib non-free
+
 deb https://deb.parrot.sh/parrot lts-security main contrib non-free
 
 # El archivo install.sh, es una ejecucion simple de apt para gestionar paquetes, puede clonar o simplemente copiar el contenido y pegarlo en su terminal.
