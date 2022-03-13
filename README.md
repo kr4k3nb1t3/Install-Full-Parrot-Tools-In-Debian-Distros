@@ -24,6 +24,8 @@ chmod +x install.sh
 
 ./install.sh
 
+# Si recibe el error "E: Sub-process /usr/bin/dpkg returned an error code (1)", vuelva a ejecutar ./install.sh
+
 cd .. && rm -r Install-Full-Parrot-Tools-In-Debian-Distros
 
 # Error apt-secure(8) de importacion GPG solucionado. Ahora la llave se almacena en la carpeta "/etc/apt/trusted.gpg.d" como "parrot-archive-keyring.gpg"
