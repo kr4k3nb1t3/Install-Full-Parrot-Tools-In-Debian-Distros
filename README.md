@@ -4,10 +4,6 @@
 
 # Comience editando el archivo /etc/apt/sources.list y agregue las siguientes lineas al final del archivo...
 
-deb https://deb.parrot.sh/parrot/ rolling main contrib non-free
-
-deb https://deb.parrot.sh/parrot/ rolling-security main contrib non-free
-
 deb https://deb.parrot.sh/parrot lts main contrib non-free
 
 deb https://deb.parrot.sh/parrot lts-updates main contrib non-free
