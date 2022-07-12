@@ -1,8 +1,8 @@
 # Install-Full-Parrot-Tools-In-Debian-Distros
 
-# Instale todas las herramientas de Parrot OS en su distribucion basada en Debian. (IDE de desarrollo, Pentesting, Distintos lenguajes de programacion, Privacidad y todo lo que deberia estar en el Menu de Parrot OS)
+# Install all the Parrot OS tools in your Debian based distribution (Development IDE, Pentesting, Different programming languages, Privacy and everything that should be in the Parrot OS Menu).
 
-# Comience editando el archivo /etc/apt/sources.list y agregue las siguientes lineas al final del archivo...
+# Start by editing the /etc/apt/sources.list file and add the following lines at the end of the file...
 
 deb https://deb.parrot.sh/parrot lts main contrib non-free
 
@@ -12,7 +12,7 @@ deb https://deb.parrot.sh/parrot lts-backports main contrib non-free
 
 deb https://deb.parrot.sh/parrot lts-security main contrib non-free
 
-# El archivo install.sh, es una ejecucion simple de apt para gestionar paquetes, puede clonar o simplemente copiar el contenido y pegarlo en su terminal.
+# The install.sh file, a simple apt run to manage packages, can be cloned or simply copied and pasted into your terminal.
 
 git clone https://github.com/kr4k3nb1t3/Install-Full-Parrot-Tools-In-Debian-Distros.git && cd Install-Full-Parrot-Tools-In-Debian-Distros
 
@@ -20,30 +20,30 @@ chmod +x install.sh
 
 ./install.sh
 
-# Si recibe el error "E: Sub-process /usr/bin/dpkg returned an error code (1)", vuelva a ejecutar ./install.sh
+# If you receive the error "E: Sub-process /usr/bin/dpkg returned an error code (1)", re-run ./install.sh
 
 cd .. && rm -r Install-Full-Parrot-Tools-In-Debian-Distros
 
-# Error apt-secure(8) de importacion GPG solucionado. Ahora la llave se almacena en la carpeta "/etc/apt/trusted.gpg.d" como "parrot-archive-keyring.gpg"
+# GPG import error apt-secure(8) fixed. Now the key is stored in the folder "/etc/apt/trusted.gpg.d" as "parrot-archive-keyring.gpg".
 
-# Instalacion sobre la nueva version (5.0) de Parrot OS 
+# Installation on the new version (5.0) of Parrot OS Electro Ara.
 
-# Adicionalmente cuenta con el archivo zshrc de Parrot OS para tener la terminal con sus configuraciones predeterminadas del sistema, esto lo pude personalizar a su manera integrandolo con P10K y modificando el archivo. En mi caso el codigo "preexec () { print -Pn "\e]0;$1 - Terminal\a" }" de la linea #62 es de gran ayuda, ya que renombra el titulo de la terminal segun el comando que meta, para mantener un orden de trabajo.
+# Additionally it has the Parrot OS zshrc file to have the terminal with its default system settings, you can customize it in your own way by integrating it with P10K and modifying the file. In my case the code "preexec () { print -Pn "0;$1 - Terminal" }" in line #62 is a great help, since it renames the terminal title according to the command I enter, to keep a working order.
 
-# Para instalar, situese en el directorio clonado, reemplace su ~/.zshrc por este archivo, como usuario root y no root.
+# To install, go to the cloned directory, replace your ~/.zshrc with this file, as root and not root.
 
 cp -r zshrc ~/.zshrc
 
 sudo cp -r zshrc ~/.zshrc
 
-# Anonsurf no esta pensado para otros sistemas fuera de parrot, sin embargo antes de ejecutarlo puede hacer una copia de su resolv.conf, para evitar problemas de conexion al parar anonsurf, tiende a borrar sus nameservers solamente. Si usa kali, puede eliminar el anonsurf que ha instalado por defecto y trabajar con los siguientes repositorios segun sus preferencias...
+# Anonsurf is not intended for systems other than parrot, however before running it you can make a copy of your resolv.conf, to avoid connection problems when stopping anonsurf, tend to delete your nameservers only. If you use kali, you can remove the anonsurf you have installed by default and work with the following repositories according to your preferences...
 
 https://github.com/BrainfuckSec/kalitorify
 
 https://github.com/Und3rf10w/kali-anonsurf
 
-# Testeado en Kali Linux
+# Tested on Kali Linux
 
-# Resultado final. Video...
+# Final result. Video...
 
 https://www.youtube.com/watch?v=OEAA44rv5L4
